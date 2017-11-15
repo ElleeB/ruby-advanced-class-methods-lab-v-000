@@ -58,5 +58,14 @@ class Song
     return song
   end
 
+  def self.create_from_filename(mp3)
+   song = self.new_from_filename(mp3)
+   if self.find_by_name(name)
+     return song
+   else
+     song = self.new_from_filename(mp3)
+     song.save
+   end
+ end
 
 end
