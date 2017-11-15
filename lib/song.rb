@@ -54,7 +54,8 @@ class Song
    array.pop
    song = self.new
    song.name = array[1]
-   song.artist_name = array[2]
+   song.artist_name = array[0]
+   return song
  end
 
 
