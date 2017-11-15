@@ -47,4 +47,15 @@ class Song
     self.all.sort_by {|word| word.name}
   end
 
+  mp3 = "Taylor Swift - Blank Space.mp3"
+
+  def self.new_from_filename(mp3)
+   array = mp3.split(/[-.]/)
+   array.pop
+   song = self.new
+   song.name = array[1]
+   song.artist_name = array[2]
+ end
+    
+
 end
