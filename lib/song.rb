@@ -65,7 +65,7 @@ class Song
    #else
      song = self.new_from_filename(mp3)
      song.save
-   end
+   #end
  end
 
 end
