@@ -37,10 +37,14 @@ class Song
 
   def self.find_or_create_by_name(name)
     if self.find_by_name(name)
-      puts nil
+      nil
     else
       Song.create_by_name(name)
     end
+  end
+
+  def self.alphabetical
+    self.all.sort_by {|word| word.name} 
   end
 
 end
