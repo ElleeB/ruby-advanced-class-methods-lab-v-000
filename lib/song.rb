@@ -36,6 +36,3 @@ class Song
   end
   
 end
-
-# song.name = name
-#    song.artist_name = artist_name
