@@ -32,11 +32,9 @@ class Song
   end
 
   def self.find_by_name(name)
-    if self.all.include?(name)
-      puts self
-    end
+   Song.all.detect {|song| song.name == "#{name}"}
   end
-
+  
 end
 
 # song.name = name
